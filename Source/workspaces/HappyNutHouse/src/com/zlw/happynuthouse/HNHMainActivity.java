@@ -2,6 +2,7 @@ package com.zlw.happynuthouse;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,6 +12,7 @@ public class HNHMainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hnhmain);
+		Log.d("HNH", "我们有一个梦想！");
 	}
 
 	@Override
