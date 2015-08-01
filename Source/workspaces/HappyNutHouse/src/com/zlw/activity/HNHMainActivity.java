@@ -1,4 +1,10 @@
-package com.zlw.happynuthouse;
+package com.zlw.activity;
+
+import com.zlw.happynuthouse.R;
+import com.zlw.happynuthouse.R.id;
+import com.zlw.happynuthouse.R.layout;
+import com.zlw.happynuthouse.R.menu;
+import com.zlw.utils.HnhLog;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -6,13 +12,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class HNHMainActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hnhmain);
-		Log.d("HNH", "我们有一个梦想！");
+		
+		HnhLog.d("liu", "Test !!");		
 	}
 
 	@Override
