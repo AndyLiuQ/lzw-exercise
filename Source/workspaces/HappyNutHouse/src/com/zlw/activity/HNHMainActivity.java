@@ -1,5 +1,6 @@
 package com.zlw.activity;
 
+import com.zlw.bl.HNHDbManager;
 import com.zlw.happynuthouse.R;
 import com.zlw.happynuthouse.R.id;
 import com.zlw.happynuthouse.R.layout;
@@ -20,7 +21,8 @@ public class HNHMainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hnhmain);
 		
-		HnhLog.d("liu", "Test !!");		
+		HnhLog.d("liu", "Test !!");
+		HNHDbManager dbManager = new HNHDbManager(this);
 	}
 
 	@Override
